@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- TODO: add proper viewport stuff later -->
+    <meta name="viewport" content="width=device-width">
+    <title>space game v2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- title thing at start -->
+    <div id="titleScreen">
+        <h1>SPACE BLASTER</h1>
+        <p>press space to shoot</p>
+    </div>
+
+    <div id="hud">
+
+        <div id="leftStats">
+            <p>SCORE: <b id="score">0</b></p>
+            <p>HP: <b id="health">100</b></p>
+        </div>
+
+        <div id="rightStats">
+            <!-- shields not really implemented yet lol -->
+            <p>SHIELDS: <b id="shields">3</b></p>
+            <p>AMMO: <b id="ammo">inf</b></p>
+        </div>
+
+    </div>
+
+    <div id="waveMsg">wave 1 - enemies!</div>
+
+    <!-- health bar, orange bc why not -->
+    <div id="hpBarWrap">
+        <div id="hpBar"></div>
+    </div>
+
+    <div id="keyHints">arrow keys = move &nbsp;|&nbsp; space = shoot</div>
+
+    <!-- game over popup -->
+    <div id="deadScreen">
+        <h2>YOU DIED</h2>
+        <p id="finalScoreTxt">score: 0</p>
+        <br>
+        <button id="restartBtn">try again</button>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
